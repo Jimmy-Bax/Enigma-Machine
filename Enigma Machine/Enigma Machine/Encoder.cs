@@ -10,23 +10,50 @@ namespace Enigma_Machine
 {
     public class Encoder
     {
-
+        Reflector reflector;
         Wheel wheel1;
         Wheel wheel2;
         Wheel wheel3;
 
-        public Encoder(Wheel wheel1, Wheel wheel2, Wheel wheel3)
+        int wheel1Value;
+        int wheel2Value;
+        int wheel3Value;
+
+        public Encoder(int wheel1, int wheel2, int wheel3, int reflector)
         {
-            this.wheel1 = wheel1;
-            this.wheel2 = wheel2;
-            this.wheel3 = wheel3;
+            this.reflector = new Reflector(reflector);
+            this.wheel1 = new Wheel(wheel1);
+            this.wheel2 = new Wheel(wheel2);
+            this.wheel3 = new Wheel(wheel3);
+
+            wheel1Value = wheel1;
+            wheel2Value = wheel2;
+            wheel3Value = wheel3;
         }
 
-        public string Encode(string input)
+        public int Encode(int input)
         {
-            string output;
+            wheel3.NextPosition();
+            int output = wheel3.RunThrough(input, true);
 
+            if (wheel3.RotateNextWheel())
+            {
+                wheel2.NextPosition();
+            }
+            output = wheel2.RunThrough(output, true);
 
+            if (wheel2.RotateNextWheel())
+            {
+                wheel1.NextPosition();
+            }
+            output = wheel1.RunThrough(output, true);
+
+            output = reflector.RunThrough(output, true);
+            output = reflector.RunThrough(output, false);
+
+            output = wheel1.RunThrough(output, false);
+            output = wheel2.RunThrough(output, false);
+            output = wheel3.RunThrough(output, false);
 
             return output;
         }

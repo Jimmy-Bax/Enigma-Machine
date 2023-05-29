@@ -1,25 +1,36 @@
+using System.Windows.Forms;
+
 namespace Enigma_Machine
 {
     public partial class EnigmaMachine : Form
     {
-
-        Wheel rotor1 = new Wheel("EKMFLGDQVZNTOWYHXUSPAIBRCJ", 'Q', 0);
-        Wheel rotor2 = new Wheel("AJDKSIRUXBLHWTMCQGZNPYFVOE", 'E', 0);
-        Wheel rotor3 = new Wheel("BDFHJLCPRTXVZNYEIWGAKMUSQO", 'V', 0);
-        Wheel rotor4 = new Wheel("ESOVPZJAYQUIRHXLNFTGKDCMWB", 'J', 0);
-        Wheel rotor5 = new Wheel("VZBRGITYUPSDNHLXAWMJQOFECK", 'Z', 0);
-
+        Encoder encoder;
         public EnigmaMachine()
         {
             InitializeComponent();
+            comboBoxReflector.SelectedIndex = 0;
         }
 
         private void buttonEncode_Click(object sender, EventArgs e)
         {
             if (checkIfWheelSelectionIsPosible())
             {
-                MessageBox.Show("Encoding");
-                //call encoder
+                encoder = new Encoder(Decimal.ToInt32(numericUpDownWheel1.Value), Decimal.ToInt32(numericUpDownWheel2.Value), Decimal.ToInt32(numericUpDownWheel3.Value), comboBoxReflector.SelectedIndex);
+
+                richTextBoxOutput.Clear();
+                string[] characterArray = GetTextAsArray(richTextBoxInput);
+
+                for (int i = 0; i < characterArray.Length; i++)
+                {
+                    if (characterArray[i] == " " || IsNumeric(characterArray[i]))
+                    {
+                        AddCharToRichTextBox(richTextBoxOutput, characterArray[i]);
+                    }
+                    else
+                    {
+                        AddCharToRichTextBox(richTextBoxOutput, ConvertToString(encoder.Encode(ConvertToIndex(characterArray[i]))));
+                    }
+                }
             }
             else
             {
@@ -36,6 +47,40 @@ namespace Enigma_Machine
             }
 
             return false;
+        }
+
+        private int ConvertToIndex(string input)
+        {
+            input = input.ToUpper();
+            char toConvertChar = input.ToCharArray()[0];
+            return toConvertChar - 65;
+        }
+
+        private string ConvertToString(int input)
+        {
+            input += 65;
+            char toConvertChar = (char)input;
+            return toConvertChar.ToString();
+        }
+
+        private string[] GetTextAsArray(RichTextBox richTextBox)
+        {
+            string text = richTextBox.Text;
+            string[] characters = text.Select(c => c.ToString()).ToArray();
+            return characters;
+        }
+
+        private void AddCharToRichTextBox(RichTextBox richTextBox, string character)
+        {
+            richTextBox.SelectionStart = richTextBox.TextLength;
+            richTextBox.SelectionLength = 0;
+            richTextBox.SelectedText = character;
+        }
+
+        private bool IsNumeric(string value)
+        {
+            bool isNumber = int.TryParse(value, out _);
+            return isNumber;
         }
     }
 }

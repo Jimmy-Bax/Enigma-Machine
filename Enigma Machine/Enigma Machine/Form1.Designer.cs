@@ -39,6 +39,8 @@
             this.numericUpDownWheel2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownWheel3 = new System.Windows.Forms.NumericUpDown();
             this.buttonEncode = new System.Windows.Forms.Button();
+            this.comboBoxReflector = new System.Windows.Forms.ComboBox();
+            this.labelReflector = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel3)).BeginInit();
@@ -47,7 +49,7 @@
             // labelWheel1
             // 
             this.labelWheel1.AutoSize = true;
-            this.labelWheel1.Location = new System.Drawing.Point(192, 104);
+            this.labelWheel1.Location = new System.Drawing.Point(280, 117);
             this.labelWheel1.Name = "labelWheel1";
             this.labelWheel1.Size = new System.Drawing.Size(63, 20);
             this.labelWheel1.TabIndex = 3;
@@ -56,7 +58,7 @@
             // labelWheel2
             // 
             this.labelWheel2.AutoSize = true;
-            this.labelWheel2.Location = new System.Drawing.Point(276, 104);
+            this.labelWheel2.Location = new System.Drawing.Point(364, 117);
             this.labelWheel2.Name = "labelWheel2";
             this.labelWheel2.Size = new System.Drawing.Size(63, 20);
             this.labelWheel2.TabIndex = 4;
@@ -65,7 +67,7 @@
             // labelWheel3
             // 
             this.labelWheel3.AutoSize = true;
-            this.labelWheel3.Location = new System.Drawing.Point(361, 104);
+            this.labelWheel3.Location = new System.Drawing.Point(449, 117);
             this.labelWheel3.Name = "labelWheel3";
             this.labelWheel3.Size = new System.Drawing.Size(63, 20);
             this.labelWheel3.TabIndex = 5;
@@ -108,7 +110,7 @@
             // 
             // numericUpDownWheel1
             // 
-            this.numericUpDownWheel1.Location = new System.Drawing.Point(192, 127);
+            this.numericUpDownWheel1.Location = new System.Drawing.Point(280, 140);
             this.numericUpDownWheel1.Maximum = new decimal(new int[] {
             5,
             0,
@@ -130,7 +132,7 @@
             // 
             // numericUpDownWheel2
             // 
-            this.numericUpDownWheel2.Location = new System.Drawing.Point(276, 127);
+            this.numericUpDownWheel2.Location = new System.Drawing.Point(364, 140);
             this.numericUpDownWheel2.Maximum = new decimal(new int[] {
             5,
             0,
@@ -152,7 +154,7 @@
             // 
             // numericUpDownWheel3
             // 
-            this.numericUpDownWheel3.Location = new System.Drawing.Point(361, 127);
+            this.numericUpDownWheel3.Location = new System.Drawing.Point(449, 140);
             this.numericUpDownWheel3.Maximum = new decimal(new int[] {
             5,
             0,
@@ -174,7 +176,7 @@
             // 
             // buttonEncode
             // 
-            this.buttonEncode.Location = new System.Drawing.Point(837, 104);
+            this.buttonEncode.Location = new System.Drawing.Point(837, 117);
             this.buttonEncode.Name = "buttonEncode";
             this.buttonEncode.Size = new System.Drawing.Size(501, 120);
             this.buttonEncode.TabIndex = 13;
@@ -182,11 +184,35 @@
             this.buttonEncode.UseVisualStyleBackColor = true;
             this.buttonEncode.Click += new System.EventHandler(this.buttonEncode_Click);
             // 
+            // comboBoxReflector
+            // 
+            this.comboBoxReflector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxReflector.FormattingEnabled = true;
+            this.comboBoxReflector.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.comboBoxReflector.Location = new System.Drawing.Point(192, 140);
+            this.comboBoxReflector.Name = "comboBoxReflector";
+            this.comboBoxReflector.Size = new System.Drawing.Size(63, 28);
+            this.comboBoxReflector.TabIndex = 14;
+            // 
+            // labelReflector
+            // 
+            this.labelReflector.AutoSize = true;
+            this.labelReflector.Location = new System.Drawing.Point(192, 117);
+            this.labelReflector.Name = "labelReflector";
+            this.labelReflector.Size = new System.Drawing.Size(69, 20);
+            this.labelReflector.TabIndex = 15;
+            this.labelReflector.Text = "Reflector";
+            // 
             // EnigmaMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1599, 827);
+            this.Controls.Add(this.labelReflector);
+            this.Controls.Add(this.comboBoxReflector);
             this.Controls.Add(this.buttonEncode);
             this.Controls.Add(this.numericUpDownWheel3);
             this.Controls.Add(this.numericUpDownWheel2);
@@ -220,5 +246,7 @@
         private NumericUpDown numericUpDownWheel2;
         private NumericUpDown numericUpDownWheel3;
         private Button buttonEncode;
+        private ComboBox comboBoxReflector;
+        private Label labelReflector;
     }
 }

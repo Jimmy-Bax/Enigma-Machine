@@ -25,3 +25,10 @@ F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.dll
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\refint\Enigma Machine.dll
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.pdb
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.exe
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.deps.json
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.runtimeconfig.json
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.dll
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.pdb
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.genruntimeconfig.cache
+F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\ref\Enigma Machine.dll
