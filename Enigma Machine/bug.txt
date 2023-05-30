@@ -1,0 +1,5 @@
+config A123
+       AAET
+
+bij eerstvolgende stap wordt wiel 2 verzet, later ook na de V op wiel 3.
+dubbele stap op 1 wiel dat geen 2 stappen heeft? is dit een bug in mijn programma of in de java simulator?

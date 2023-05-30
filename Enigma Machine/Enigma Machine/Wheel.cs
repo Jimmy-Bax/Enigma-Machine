@@ -75,7 +75,7 @@ namespace Enigma_Machine
 
         public bool RotateNextWheel()
         {
-            if (notch == position)
+            if ((notch + 1) == position)
             {
                 return true;
             }

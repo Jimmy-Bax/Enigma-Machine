@@ -41,6 +41,10 @@
             this.buttonEncode = new System.Windows.Forms.Button();
             this.comboBoxReflector = new System.Windows.Forms.ComboBox();
             this.labelReflector = new System.Windows.Forms.Label();
+            this.comboBoxReflectorPos = new System.Windows.Forms.ComboBox();
+            this.comboBoxWheel1Pos = new System.Windows.Forms.ComboBox();
+            this.comboBoxWheel2Pos = new System.Windows.Forms.ComboBox();
+            this.comboBoxWheel3Pos = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWheel3)).BeginInit();
@@ -206,11 +210,159 @@
             this.labelReflector.TabIndex = 15;
             this.labelReflector.Text = "Reflector";
             // 
+            // comboBoxReflectorPos
+            // 
+            this.comboBoxReflectorPos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxReflectorPos.FormattingEnabled = true;
+            this.comboBoxReflectorPos.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.comboBoxReflectorPos.Location = new System.Drawing.Point(192, 173);
+            this.comboBoxReflectorPos.Name = "comboBoxReflectorPos";
+            this.comboBoxReflectorPos.Size = new System.Drawing.Size(63, 28);
+            this.comboBoxReflectorPos.TabIndex = 16;
+            // 
+            // comboBoxWheel1Pos
+            // 
+            this.comboBoxWheel1Pos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWheel1Pos.FormattingEnabled = true;
+            this.comboBoxWheel1Pos.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.comboBoxWheel1Pos.Location = new System.Drawing.Point(280, 173);
+            this.comboBoxWheel1Pos.Name = "comboBoxWheel1Pos";
+            this.comboBoxWheel1Pos.Size = new System.Drawing.Size(63, 28);
+            this.comboBoxWheel1Pos.TabIndex = 17;
+            // 
+            // comboBoxWheel2Pos
+            // 
+            this.comboBoxWheel2Pos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWheel2Pos.FormattingEnabled = true;
+            this.comboBoxWheel2Pos.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.comboBoxWheel2Pos.Location = new System.Drawing.Point(364, 173);
+            this.comboBoxWheel2Pos.Name = "comboBoxWheel2Pos";
+            this.comboBoxWheel2Pos.Size = new System.Drawing.Size(63, 28);
+            this.comboBoxWheel2Pos.TabIndex = 18;
+            // 
+            // comboBoxWheel3Pos
+            // 
+            this.comboBoxWheel3Pos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWheel3Pos.FormattingEnabled = true;
+            this.comboBoxWheel3Pos.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.comboBoxWheel3Pos.Location = new System.Drawing.Point(449, 173);
+            this.comboBoxWheel3Pos.Name = "comboBoxWheel3Pos";
+            this.comboBoxWheel3Pos.Size = new System.Drawing.Size(63, 28);
+            this.comboBoxWheel3Pos.TabIndex = 19;
+            // 
             // EnigmaMachine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1599, 827);
+            this.Controls.Add(this.comboBoxWheel3Pos);
+            this.Controls.Add(this.comboBoxWheel2Pos);
+            this.Controls.Add(this.comboBoxWheel1Pos);
+            this.Controls.Add(this.comboBoxReflectorPos);
             this.Controls.Add(this.labelReflector);
             this.Controls.Add(this.comboBoxReflector);
             this.Controls.Add(this.buttonEncode);
@@ -248,5 +400,9 @@
         private Button buttonEncode;
         private ComboBox comboBoxReflector;
         private Label labelReflector;
+        private ComboBox comboBoxReflectorPos;
+        private ComboBox comboBoxWheel1Pos;
+        private ComboBox comboBoxWheel2Pos;
+        private ComboBox comboBoxWheel3Pos;
     }
 }

@@ -9,13 +9,17 @@ namespace Enigma_Machine
         {
             InitializeComponent();
             comboBoxReflector.SelectedIndex = 0;
+            comboBoxReflectorPos.SelectedIndex = 0;
+            comboBoxWheel1Pos.SelectedIndex = 0;
+            comboBoxWheel2Pos.SelectedIndex = 0;
+            comboBoxWheel3Pos.SelectedIndex = 0;
         }
 
         private void buttonEncode_Click(object sender, EventArgs e)
         {
             if (checkIfWheelSelectionIsPosible())
             {
-                encoder = new Encoder(Decimal.ToInt32(numericUpDownWheel1.Value), Decimal.ToInt32(numericUpDownWheel2.Value), Decimal.ToInt32(numericUpDownWheel3.Value), comboBoxReflector.SelectedIndex);
+                encoder = new Encoder(Decimal.ToInt32(numericUpDownWheel1.Value), comboBoxWheel1Pos.SelectedIndex, Decimal.ToInt32(numericUpDownWheel2.Value), comboBoxWheel2Pos.SelectedIndex, Decimal.ToInt32(numericUpDownWheel3.Value), comboBoxWheel3Pos.SelectedIndex, comboBoxReflector.SelectedIndex, comboBoxReflectorPos.SelectedIndex);
 
                 richTextBoxOutput.Clear();
                 string[] characterArray = GetTextAsArray(richTextBoxInput);
@@ -28,6 +32,22 @@ namespace Enigma_Machine
                     }
                     else
                     {
+                        encoder.UpdateWheelPositions();
+
+                        comboBoxWheel3Pos.SelectedIndex = (comboBoxWheel3Pos.SelectedIndex + 1) % 26;
+
+                        if (encoder.RotateWheel2)
+                        {
+                            comboBoxWheel2Pos.SelectedIndex = (comboBoxWheel2Pos.SelectedIndex + 1) % 26;
+                            encoder.RotateWheel2 = false;
+                        }
+
+                        if (encoder.RotateWheel1)
+                        {
+                            comboBoxWheel1Pos.SelectedIndex = (comboBoxWheel1Pos.SelectedIndex + 1) % 26;
+                            encoder.RotateWheel1 = false;
+                        }
+
                         AddCharToRichTextBox(richTextBoxOutput, ConvertToString(encoder.Encode(ConvertToIndex(characterArray[i]))));
                     }
                 }
