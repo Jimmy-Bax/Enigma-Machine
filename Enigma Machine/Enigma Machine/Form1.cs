@@ -22,7 +22,7 @@ namespace Enigma_Machine
 
                 for (int i = 0; i < characterArray.Length; i++)
                 {
-                    if (characterArray[i] == " " || IsNumeric(characterArray[i]))
+                    if (characterArray[i] == " " || !IsAlphabetical(characterArray[i]))
                     {
                         AddCharToRichTextBox(richTextBoxOutput, characterArray[i]);
                     }
@@ -77,10 +77,10 @@ namespace Enigma_Machine
             richTextBox.SelectedText = character;
         }
 
-        private bool IsNumeric(string value)
+        private bool IsAlphabetical(string input)
         {
-            bool isNumber = int.TryParse(value, out _);
-            return isNumber;
+            bool isAlphabetical = input.All(char.IsLetter);
+            return isAlphabetical;
         }
     }
 }

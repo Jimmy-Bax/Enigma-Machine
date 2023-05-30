@@ -32,3 +32,20 @@ F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.pdb
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.genruntimeconfig.cache
 F:\Documenten\Git folders\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\ref\Enigma Machine.dll
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.exe
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.deps.json
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.runtimeconfig.json
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.dll
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\bin\Debug\net6.0-windows\Enigma Machine.pdb
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.csproj.AssemblyReference.cache
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma_Machine.EnigmaMachine.resources
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.csproj.GenerateResource.cache
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.AssemblyInfoInputs.cache
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.AssemblyInfo.cs
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.csproj.CoreCompileInputs.cache
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.dll
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\refint\Enigma Machine.dll
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.pdb
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\Enigma Machine.genruntimeconfig.cache
+C:\Users\jimmy\OneDrive\Documenten\Tech semester 6\Enigma-Machine\Enigma Machine\Enigma Machine\obj\Debug\net6.0-windows\ref\Enigma Machine.dll
