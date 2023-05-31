@@ -20,7 +20,7 @@ namespace Enigma_Machine
 
         public Encoder(int wheel1, int wheel1Pos, int wheel2, int wheel2Pos, int wheel3, int wheel3Pos, int reflector, int reflectorPos)
         {
-            this.reflector = new Reflector(reflector);
+            this.reflector = new Reflector(reflector, reflectorPos);
             this.wheel1 = new Wheel(wheel1, wheel1Pos);
             this.wheel2 = new Wheel(wheel2, wheel2Pos);
             this.wheel3 = new Wheel(wheel3, wheel3Pos);

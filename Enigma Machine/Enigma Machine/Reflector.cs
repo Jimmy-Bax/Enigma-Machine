@@ -10,9 +10,12 @@ namespace Enigma_Machine
     internal class Reflector
     {
         private int[,] wiring;
+        private int position;
 
-        public Reflector(int reflectorNo)
+        public Reflector(int reflectorNo, int position = 0)
         {
+            this.position = position;
+
             switch (reflectorNo)
             {
                 case 0://A
@@ -29,14 +32,14 @@ namespace Enigma_Machine
 
         public int RunThrough(int input, bool forward)
         {
-            input = (input) % 26;
+            input = (input + position) % 26;
             if (forward)
             {
-                return wiring[input, 1];
+                return (wiring[input, 1] - position + 26) % 26;
             }
             else
             {
-                return wiring[input, 0];
+                return (wiring[input, 0] - position + 26) % 26;
             }
         }
     }
