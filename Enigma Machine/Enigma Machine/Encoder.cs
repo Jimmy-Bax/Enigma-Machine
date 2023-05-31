@@ -53,12 +53,12 @@ namespace Enigma_Machine
             {
                 RotateWheel2 = true;
                 wheel2.NextPosition();
-            }
 
-            if (wheel2.RotateNextWheel())
-            {
-                RotateWheel1 = true;
-                wheel1.NextPosition();
+                if (wheel2.RotateNextWheel())
+                {
+                    RotateWheel1 = true;
+                    wheel1.NextPosition();
+                }
             }
         }
 
